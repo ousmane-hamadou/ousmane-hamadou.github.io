@@ -1,0 +1,47 @@
+.page {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr 52px;
+
+  grid-template-areas:
+    "masheader"
+    "sidebar"
+    "site-content"
+    "site-footer";
+}
+
+@media (min-width: 769px) {
+  .page {
+    min-height: 100vh;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr 52px;
+    grid-template-areas:
+      "masheader    masheader     masheader     masheader     masheader"
+      "sidebar      sidebar       site-content  site-content  site-content"
+      "site-footer  site-footer   site-footer    site-footer   site-footer";
+  }
+}
+
+.masheader {
+  grid-area: masheader;
+}
+
+.masheader p {
+  margin: 0;
+}
+
+.site-content {
+  grid-area: site-content;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.site-footer {
+  grid-area: site-footer;
+  padding-inline: 8px;
+}
