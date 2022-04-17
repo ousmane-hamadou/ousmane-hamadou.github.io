@@ -16,11 +16,11 @@
     min-height: 100vh;
     display: grid;
     gap: 24px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 352px repeat(4, 1fr);
     grid-template-rows: auto 1fr 52px;
     grid-template-areas:
       "masheader    masheader     masheader     masheader     masheader"
-      "sidebar      sidebar       site-content  site-content  site-content"
+      "sidebar      site-content       site-content  site-content  site-content"
       "site-footer  site-footer   site-footer    site-footer   site-footer";
   }
 }
