@@ -70,8 +70,9 @@
 
 .site-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-
+  align-items: baseline;
   box-shadow: 0px 1px 6px var(--surface4);
 }
 
@@ -83,35 +84,14 @@
   padding-inline: 1.25rem;
 }
 
+.me {
+  color: var(--texte2);
+  font-size: 0.9em;
+  padding-inline: 1.25rem;
+}
+
 .nav-title:hover {
   background-color: var(--surface3);
-}
-
-.navbar {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar-item a {
-  display: block;
-  font-size: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
-  padding-block: var(--nav-title-pad-block);
-  padding-inline: 1.25rem;
-  text-decoration: none;
-}
-
-.navbar-item a:hover {
-  text-decoration: underline;
-}
-
-.navbar-item a:hover {
-  background-color: var(--surface5);
-}
-
-.navbar-item a:focus {
-  outline: 2px dashed var(--brand);
 }
 
 .sommaire {
