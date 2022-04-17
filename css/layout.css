@@ -1,6 +1,10 @@
+:root {
+  --sidebar-size: 25ch;
+}
+
 .page {
+  max-width: 100vw;
   display: grid;
-  gap: 8px;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr 52px;
 
@@ -12,16 +16,21 @@
 }
 
 @media (min-width: 769px) {
+  :root {
+    --sidebar-size: 352px;
+  }
+}
+
+@media (min-width: 577px) {
   .page {
     min-height: 100vh;
     display: grid;
-    gap: 24px;
-    grid-template-columns: 352px repeat(4, 1fr);
-    grid-template-rows: auto 1fr 52px;
+    grid-template-columns: var(--sidebar-size) 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
-      "masheader    masheader     masheader     masheader     masheader"
-      "sidebar      site-content       site-content  site-content  site-content"
-      "site-footer  site-footer   site-footer    site-footer   site-footer";
+      "masheader    masheader"
+      "sidebar      site-content"
+      "site-footer  site-footer";
   }
 }
 
