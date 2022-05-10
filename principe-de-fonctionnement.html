@@ -1,138 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/default.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <title>Modele en cascade - Principe de fonctionnement</title>
+    <title>Modele en cascade - Les principes</title>
   </head>
   <body>
     <div class="page">
-      <header class="masheader site-header">
-        <p>
-          <a class="nav-title" href="/">Modele En Cascade</a>
-        </p>
+      <div class="masheader">
+        <header class="page-header">
+          <div class="author-info">
+            <p class="author">
+              <a class="author-name" href="/">Ousmane Hamadou</a>
+              <span class="author-id">17B292FS</span>
+            </p>
+            <div class="social-network">
+              <a
+                class="social-link"
+                href="https://www.facebook.com/hamadou.ousmane.7"
+                >facebook</a
+              >
+              <a class="social-link" href="https://github.com/ousmane-hamadou"
+                >Github</a
+              >
+            </div>
+          </div>
+        </header>
+      </div>
 
-        <p class="me">Ousmane Hamadou 17B292FS</p>
-      </header>
+      <ul class="pagination surface2">
+        <li>
+          <a class="pagination-item" href="/introduction.html"
+            >&larr;Introduction</a
+          >
+        </li>
+        <li>
+          <a class="pagination-item" href="/avantages-inconvenients.html"
+            >Avantages &amp; Inconvenients&rarr;</a
+          >
+        </li>
+      </ul>
 
-      <aside class="sidebar">
-        <p class="sidebar-title">Sommaire</p>
-
-        <ul role="navigation" class="sommaire">
-          <li class="sommaire-item">
-            <a class="sommaire-link" href="/#introduction">Introduction</a>
-          </li>
-          <li class="sommaire-item">
-            <a
-              class="sommaire-link current-page"
-              href="/principe-de-fonctionnement.html"
-              >Principe de fonctionnement</a
-            >
-
-            <ul class="sous-sommaire">
-              <li class="sommaire-item">
-                <a
-                  class="sommaire-link"
-                  href="principe-de-fonctionnement.html#etude-de-faisabilite"
-                  >Etude de faisabilite</a
-                >
-              </li>
-
-              <li class="sommaire-item">
-                <a
-                  class="sommaire-link"
-                  href="principe-de-fonctionnement.html#analyse-des-besoins"
-                  >Analyse des besoins</a
-                >
-              </li>
-
-              <li class="sommaire-item">
-                <a
-                  class="sommaire-link"
-                  href="principe-de-fonctionnement.html#conception"
-                  >Conception</a
-                >
-              </li>
-
-              <li class="sommaire-item">
-                <a
-                  class="sommaire-link"
-                  href="principe-de-fonctionnement.html#implementation"
-                  >Implementation</a
-                >
-              </li>
-
-              <li class="sommaire-item">
-                <a
-                  class="sommaire-link"
-                  href="principe-de-fonctionnement.html#test"
-                  >Test</a
-                >
-              </li>
-
-              <li class="sommaire-item">
-                <a
-                  class="sommaire-link"
-                  href="principe-de-fonctionnement.html#mise-en-production"
-                  >Mise en production</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="sommaire-item">
-            <a class="sommaire-link" href="/avantages-inconvenients.html"
-              >Avantages - Inconvenients</a
-            >
-          </li>
-          <li class="sommaire-item">
-            <a class="sommaire-link" href="/conclusion">Conclusion</a>
-          </li>
-        </ul>
-      </aside>
-
-      <main class="site-content">
-        <div class="content-area">
-          <h1 class="page-title">Les Principes de fonctionnement</h1>
+      <main class="site-content surface3">
+        <article>
+          <header>
+            <h1 class="article-title">Les Principes de fonctionnement</h1>
+          </header>
 
           <p>
-            Le principe du cycle en cascade suit une logique descendante où
-            l'organisation du travail se décline une série de six principales
-            phases ci-dessous :
+            Le modèle en cascade est le tout premier modèle utilisé en SDLC. Il
+            est également connu sous le nom de modèle séquentiel ou cycle de vie
+            chute d'eau. Il est le modèle traditionnel de développement de
+            logiciels.
           </p>
 
-          <img
-            style="width: 100%; aspect-ratio: 16/9"
-            src="images/life-cycle.png"
-            alt="cycle de vie du modele en cascade"
-          />
+          <p>
+            Le principe du cycle en cascade est assez naturel. L'organisation du
+            travail est découpée en étapes qui se succèdent les unes aux autres.
+          </p>
+
+          <figure>
+            <img
+              style="width: 100%; aspect-ratio: 16/9"
+              src="images/life-cycle.png"
+              alt="cycle de vie du modele en cascade"
+            />
+            <figcaption>fig1. cycle de vie du modele en cascade</figcaption>
+          </figure>
 
           <p>
             Ces phases diffèrent en fonction du secteur qui utilise la
-            stratégie, mais la théorie est la même. Chaque phase correspondent à
-            des ensembles de tâches prédéfinies dans un planning de réalisation
+            stratégie, mais la théorie est la même. Chaque phase correspond à un
+            ensemble de taches prédéfinies dans un planning de réalisation
             précis et en particulier :
           </p>
 
-          <ul>
-            <li>
-              Une fois qu'une phase est terminée, ses résultats sont gelés. Il
-              n'est plus possible de revenir en arrière et de réviser quoi que
-              ce soit en fonction de l'évolution des besoins ou de nouvelles
-              idées.
-            </li>
+          <p>
+            <strong
+              >Une fois qu'une phase est terminée, ses résultats sont
+              gelés.</strong
+            >
+            Il n'est plus possible de revenir en arrière et de réviser quoi que
+            ce soit en fonction de l;évolution des besoins ou de nouvelles
+            idées.
+          </p>
 
-            <li>
-              Jusqu'à ce que les résultats de la phase en cours soient complets
-              et approuvés, il est interdit de commencer un travail qui
-              appartient à la phase suivante ou à toute phase ultérieure.
-            </li>
-          </ul>
+          <p>
+            Jusqu'à ce que les résultats de la phase en cours soient complets et
+            approuvés,
+            <strong
+              >il est interdit de commencer un travail qui appartient à la phase
+              suivante ou à toute phase ultérieure.</strong
+            >
+          </p>
 
-          <h2 id="etude-de-faisabilite">Étude de faisabilité</h2>
+          <p>
+            Quand une étape est commencée, la chose à faire est de vérifier si
+            les entrants sont satisfaisants, si ce n'est pas le cas l'étape est
+            bloquée et on revient à l'étape précédente.
+          </p>
+
+          <p>
+            Chaque phase a un document à la fin qui agit comme feuille de route
+            pour la phase suivante.
+          </p>
+
+          <p>
+            Ce modèle a pour objectif d'assurer que les besoins du client sont
+            satisfaits, que le logiciel satisfait sa spécification.
+          </p>
+
+          <p>Ces phases se résument comme suit :</p>
+
+          <p>
+            <strong>ETUDE DE FAISABILITE</strong> : on se pose la question si le
+            projet en question est réalisable.
+          </p>
+
+          <p>
+            <strong>ANALYSE DES BESOINS</strong> : à ce niveau, on fait le
+            cahier de charge en définissant nos besoins.
+          </p>
+
+          <p>
+            <strong>CONCEPTION</strong> : les spécifications des exigences sont
+            étudiées ici. Elle aide à spécifier les exigences matérielles et
+            système et définir les architectures globales.
+          </p>
+
+          <p>
+            <strong>IMPLEMENTATION</strong> : avec les entrées de la conception,
+            le système est d'abord développé dans de petits programmes appelés
+            unité, qui est intégrés dans la phase suivante. Chaque unité est
+            testée suivant ses fonctionnalités.
+          </p>
+
+          <p>
+            <strong>TEST/VALIDATION</strong> : toutes les unités développées
+            dans l'implémentation sont intégrées dans un système après l'essai
+            de chaque unité. Après l'intégration, l'ensemble du système est
+            testé pour détecter toutes les fautes et défaillances.
+          </p>
+
+          <p>
+            <strong>MISE EN SERVICE ET MAINTENANCE</strong> : une fois les tests
+            fonctionnels et non-fonctionnels effectués; le produit est déployé
+            dans l'environnement du client ou sur le marché. Cette phase permet
+            aussi de faire les corrections et ou améliorations.
+          </p>
+        </article>
+
+        <article>
+          <header>
+            <h2 class="article-title">Etude de faisabilité</h2>
+          </header>
 
           <p>
             L'objectif principal de cette phase est décider de la nécessité du
@@ -151,157 +173,130 @@
             nombreux avantages puisqu'elle permet de :
           </p>
 
+          <p>
+            <strong>Définir ses objectifs</strong> : une étude de faisabilité ne
+            se révèlera efficace que si l'objectif final du projet et les
+            avantages concrets qu'il générera sont parfaitement définis. En
+            utilisant le modèle SMART (une méthodologie de management et de
+            gestion de projet qui fonctionne par objectifs), les objectifs
+            seront fixés de sorte qu'ils soient :
+          </p>
+
+          <p>
+            <em>Spécifiques</em> : établir un objectif qui ne soit pas vague ni
+            trop général, mais précis et clair dans sa formulation pour être
+            aisément compréhensible.
+          </p>
+
+          <p>
+            <em>Mesurable</em> : définir un objectif qui doit pouvoir être
+            quantifié ou qualifié précisément. De cette manière, nous serons en
+            mesures d'identifier les moyens à déployer pour atteindre votre but.
+          </p>
+
+          <p>
+            <em>Atteignable</em> : formuler un objectif suffisamment ambitieux
+            pour être motivant mais également acceptable, concret et possible à
+            atteindre. Il énonce non pas ce que vous voulez faire, mais ce que
+            vous pouvez faire, compte tenu des moyens à disposition.
+          </p>
+
+          <p>
+            <em>Relevant</em> : définir un objectif qui fait sens relativement à
+            votre domaine d'activité.
+          </p>
+
+          <p>
+            <em>Temporel</em> : définir un objectif définis et délimiter dans le
+            temps. Disposer d'un calendrier permet aussi de réfléchir aux
+            priorités et de les hiérarchiser.
+          </p>
+
+          <p>
+            <strong>Analyser l'environnement du projet</strong> : au cours de
+            cette étape, il est essentiel de prendre connaissance des
+            réglementaires en vigueur dans le secteur, de nouvelles opportunités
+            du marché ainsi que se renseigner sur les évolutions technologiques
+            en cours et à venir. Il faut également vérifier que le projet soit
+            en adéquation avec les opinions ou encore les intérêts de sa cible.
+          </p>
+
+          <p>
+            <strong>Evaluer les besoins du projet</strong> : ici, nous devons
+            réfléchir à tout ce qu'il est nécessaire de regrouper pour réussir
+            le lancement du projet et selon les objectifs fixés. Il peut s'agit
+            par exemple :
+          </p>
+
           <ul>
-            <li>
-              <strong>Définir ses objectifs</strong> : une étude de faisabilité
-              ne se révèlera efficace que si l'objectif final du projet et les
-              avantages concrets qu'il générera sont parfaitement définis. En
-              utilisant le modèle SMART (une méthodologie de management et de
-              gestion de projet qui fonctionne par objectifs), les objectifs
-              seront fixés de sorte qu'ils soient
-
-              <ul>
-                <li>
-                  <strong>Spécifiques</strong> : établir un objectif qui ne soit
-                  pas vague ni trop général, mais précis et clair dans sa
-                  formulation pour être aisément compréhensible.
-                </li>
-
-                <li>
-                  <strong>Mesurable</strong> : définir un objectif qui doit
-                  pouvoir être quantifié ou qualifié précisément. De cette
-                  manière, nous serons en mesures d'identifier les moyens à
-                  déployer pour atteindre votre but.
-                </li>
-
-                <li>
-                  <strong>Atteignable</strong> : formuler un objectif
-                  suffisamment ambitieux pour être motivant mais également
-                  acceptable, concret et possible à atteindre. Il énonce non pas
-                  ce que vous voulez faire, mais ce que vous pouvez faire,
-                  compte tenu des moyens à disposition.
-                </li>
-
-                <li>
-                  <strong>Relevant</strong> : définir un objectif qui fait sens
-                  relativement à votre domaine l'activité.
-                </li>
-
-                <li>
-                  <strong>Temporel</strong> : définir un objectif définis et
-                  délimiter dans le temps. Disposer d'un calendrier permet aussi
-                  de réfléchir aux priorités et de les hiérarchiser.
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <strong>Analyser l'environnement du projet</strong> : au cours de
-              cette étape, il est essentiel de prendre connaissance des
-              réglementations en vigueur dans le secteur, de nouvelles
-              opportunités du marché ainsi que de se renseigner sur les
-              évolutions technologiques en cours et à venir. Il faut également
-              vérifier que le projet soit en adéquation avec les opinions ou
-              encore les intérêts de sa cible.
-            </li>
-
-            <li>
-              <strong>Évaluer les besoins du projet</strong> : ici, nous devons
-              réfléchir à tout ce qu'il est nécessaire de regrouper pour réussir
-              le lancement du projet selon les objectifs fixés. Il peut s'agir,
-              par exemple
-
-              <ul>
-                <li>
-                  <span>De matériels</span>
-                  <ul>
-                    <li>Équipement informatique</li>
-                    <li>Outils de développements, etc.</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <span>Ressources humaines</span>
-                  <ul>
-                    <li>De compétences</li>
-                    <li>Formations</li>
-                    <li>Sous-traitance</li>
-                  </ul>
-                </li>
-
-                <li>D'un local professionnel</li>
-
-                <li>
-                  <span>Besoins techniques</span>
-                  <ul>
-                    <li>Spécifications techniques</li>
-                    <li>Innovations technologique, etc.</li>
-                  </ul>
-                </li>
-              </ul>
-
-              <p>
-                Une fois tous les éléments nécessaires listés, il est temps
-                d'évaluer les coûts associés. Vous obtenez de la sorte une
-                estimation budgétaire pour la réalisation de votre projet.
-              </p>
-            </li>
-
-            <li>
-              <strong>Calculer le retour sur investissement</strong> : grâce aux
-              estimations de budget et à l'identification des opportunités à
-              venir, vous seriez en mesure d'évaluer les gains potentiels que le
-              projet peut apporter. Il est préconisé d'évaluer trois scénarios
-              concernant la direction que peut prendre le projet
-
-              <ul>
-                <li>
-                  <strong>Un scénario optimiste</strong> : ce scénario est celui
-                  qui correspond à vos aspirations
-                </li>
-
-                <li>
-                  <strong>Un scénario réaliste</strong> : il est aussi
-                  indispensable d'élaborer un scénario prenant en compte une
-                  réponse du marché, pouvant être moins en avance que vos
-                  aspirations.
-                </li>
-
-                <li>
-                  <strong>Un scénario pessimiste</strong> : il faudra prendre en
-                  compte tous les éventuels aléas pouvant survenir.
-                </li>
-
-                <p>
-                  La phase d'élaboration de scénarios sera un facteur-clé du
-                  succès futur de votre activité et chacun d'entre eux doit être
-                  rentable, même le scénario pessimiste!
-                </p>
-              </ul>
-            </li>
-
-            <li>
-              <strong>Évaluer les risques</strong> : avant de lancer le projet
-              sur la base du scénario choisi, il faut encore procéder à une
-              évaluation globale des risques encourus. Au cours de cette
-              dernière étape de l'étude de faisabilité, il est important de
-              s'intéresser aux risques qui peuvent être rencontrés par le projet
-            </li>
-
-            <ul>
-              <li>Quels sont-ils ?</li>
-              <li>Combien de temps dureront-ils ?</li>
-              <li>Comment faire pour les minimiser ?</li>
-            </ul>
-
-            <p>
-              Répondre à ces questions permet d'identifier les risques qui
-              peuvent mettre en échec un projet et de trouver une parade en
-              amont pour les contourner ou y faire face.
-            </p>
+            <li>Equipements informatiques</li>
+            <li>Outils de développement, etc…</li>
+            <li>De compétences</li>
+            <li>Formations</li>
+            <li>Sous-traitance</li>
+            <li>Innovations technologique, etc…</li>
+            <li>Spécifications techniques</li>
+            <li>D;un local professionnel</li>
           </ul>
 
-          <h2 id="analyse-des-besoins">Analyse des besoins</h2>
+          <p>
+            Une fois tous les éléments nécessaires listés, il est temps
+            d'évaluer les coûts associés. Vous obtenez de la sorte une
+            estimation budgétaire pour la réalisation de votre projet.
+          </p>
+
+          <p>
+            <strong>Calculer le retour sur l'investissement</strong> : grâce aux
+            estimations de budget et à l'identification des opportunités à
+            venir, vous seriez en mesure d'évaluer les gains potentiels que le
+            projet peut apporter. Il est préconisé d'évaluer trois scénarios
+            concernant la direction que peut prendre le projet.
+          </p>
+
+          <p>
+            <em>Un scénario optimiste</em> : ce scénario est celui qui
+            correspond à vos aspirations.
+          </p>
+
+          <p>
+            <em>Un scénario réaliste </em> : il est aussi indispensable
+            d'élaborer un scénario prenant en compte une réponse du marché,
+            pouvant être moins en avance que vos aspirations.
+          </p>
+
+          <p>
+            <em>Un scénario pessimiste</em> : il faudra prendre en compte tous
+            les éventuels aléas pouvant survenir.
+          </p>
+
+          <p>
+            La phase d'élaboration de scénarios sera un facteur-clé du succès
+            futur de votre activité et chacun d'entre eux doit être rentable,
+            même le scénario pessimiste!
+          </p>
+
+          <p>
+            <strong>Evaluer les risques</strong> : avant de lancer le projet sur
+            la base du scénario choisi, il faut encore procéder à une évaluation
+            globale des risques encourus. Au cours de cette dernière étape de
+            l'étude de faisabilité, il est important de s'intéresser aux risques
+            qui peuvent être rencontrés par le projet :
+          </p>
+
+          <ul>
+            <li><em>Quels sont-ils ?</em></li>
+            <li><em>Combien de temps dureront-ils ?</em></li>
+            <li><em>Comment faire pour les minimiser ?</em></li>
+          </ul>
+          <p>
+            Répondre à ces questions permet d'identifier les risques qui peuvent
+            mettre en échec un projet et de trouver une parade en amont pour les
+            contourner ou y faire face.
+          </p>
+        </article>
+
+        <article>
+          <header><h2 class="article-title">Analyse des besoins</h2></header>
 
           <p>
             Sans une connaissance approfondie du domaine et du contexte dans
@@ -316,16 +311,16 @@
           </p>
 
           <ul>
-            <li>Qui sont les utilisateurs ?</li>
-            <li>Que veulent-ils faire avec le projet logiciel ?</li>
+            <li><em>Qui sont les utilisateurs ?</em></li>
+            <li><em>Que veulent-ils faire avec le projet logiciel ?</em></li>
           </ul>
 
           <p>
             Nous vérifions que le projet soit en adéquation avec les opinions ou
             encore avec l'intérêt de sa cible. Cette définition comprend une
-            analyse réelle décrivant les problèmes et un conceptcible permettant
-            de définir les fonctionnalités et les propriétés que le produit
-            logiciel doit offrir afin de répondre aux besoins.
+            analyse réelle décrivant les problèmes et un concept cible
+            permettant de définir les fonctionnalités et les propriétés que le
+            produit logiciel doit offrir afin de répondre aux besoins.
           </p>
 
           <p>
@@ -333,92 +328,85 @@
             en plus précis. Pour y parvenir, nous devons :
           </p>
 
-          <ul>
-            <li>
-              Commencer par <strong>décrire le contexte du logiciel</strong> à
-              créer : il s'agit ici de déterminer avec précision le public
-              concerné logiciel. Par public concerne, on entend les utilisateurs
-              qui ont besoin de ce logiciel. Nous décrivons ici
-              <strong>QUI</strong> devra utiliser le logiciel.
-            </li>
-
-            <li>
-              <strong>Décomposer en packages</strong> pour ne pas avoir à
-              analyser quelque chose de trop énorme d'un coup. Pour cette il
-              faudra se poser des questions telles que :
-
-              <ul>
-                <li>
-                  Quelles sont les grandes parties qui doivent composer le
-                  logiciel ?
-                </li>
-
-                <li>
-                  Pour une partie précise, qui, parmi les acteurs identifiés
-                  l'utilisera ?
-                </li>
-
-                <li>
-                  Enfin, nous devons préciser
-                  <strong>QUI devra pouvoir faire QUOI</strong> grâce à cette
-                  partie du logiciel. C'est ce qu'on appelle la définition des
-                  cas d'utilisation. Pour ce ressortir ces cas d'utilisation, il
-                  faudra construire un outil adapté à au contexte de son
-                  investigation. Parmi les moyens utilisés, citons :
-
-                  <ul>
-                    <li>
-                      Les entretiens individuels (auprès des utilisateurs et/ou
-                      du client)
-                    </li>
-                    <li>Les enquêtes à base de questionnaire</li>
-                    <li>
-                      Les réunions avec de participants cherchant à faire
-                      évoluer le logiciel
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <p>
+            Commencer par <strong>décrire le contexte</strong> du logiciel à
+            Analyser les besoins revient donc à découvrir des éléments de plus
+            en plus précis. Pour y parvenir, nous devons :
+          </p>
 
           <p>
-            Illustration de chacune des points cites ci-dessus peut se faire en
-            utilisant des diagrammes UML tels que :
+            Commencer par <strong>décrire le contexte</strong> du logiciel à
+            créer : il s'agit ici de déterminer avec précision le public
+            concerné logiciel. Par public concerne, on entend les utilisateurs
+            qui ont besoin de ce logiciel. Nous décrivons ici QUI devra utiliser
+            le logiciel.
+          </p>
+
+          <p>
+            <strong>Décomposer en packages</strong> pour ne pas avoir à analyser
+            quelque chose de trop énorme d'un coup. Pour cette il faudra se
+            poser des questions telles que :
           </p>
 
           <ul>
             <li>
-              Diagramme de packages pour expliquer la décomposition du logiciel
-              en parties distinctes.
+              <em
+                >Quelles sont les grandes parties qui doivent composer le
+                logiciel ?</em
+              >
             </li>
+
             <li>
-              Diagramme des cas d'utilisation pour illustrer ce que le logiciel
-              doit permettre de faire et par qui.
+              <em
+                >Pour une partie précise, qui, parmi les acteurs identifiés
+                l'utilisera ?</em
+              >
             </li>
           </ul>
 
-          <h2 id="conception">Conception</h2>
+          <p>
+            Enfin, nous devons préciser
+            <strong>QUI devra pouvoir faire QUOI</strong> grâce à cette partie
+            du logiciel. C'est ce qu'on appelle la définition des cas
+            d'utilisation. Pour ce ressortir ces cas d'utilisation, il faudra
+            construire un outil adapté à au contexte de son investigation. Parmi
+            les moyens utilisés, citons :
+          </p>
+
+          <ul>
+            <li>
+              Les entretiens individuels (auprès des utilisateurs et/ou du
+              client)
+            </li>
+
+            <li>Les enquêtes à base de questionnaire</li>
+
+            <li>
+              Les réunions avec de participants cherchant à faire évoluer le
+              logiciel
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <h2 class="article-title">Conception</h2>
+          </header>
 
           <p>
             La phase de conception sert à l'élaboration d'un concept de
-            résolution concret sur la base des besoins, des tâches et des
+            résolution concret sur la base des besoins, des taches et des
             stratégies déterminées au préalable. Au cours de cette phase, les
-            développeurs élaborent l'architecture logicielle ainsi qu'un plan de
-            construction détaillé du logiciel et se concentrent ainsi sur les
-            éléments concrets tels que les interfaces, les Framework ou les
+            développeurs élaborent l'architecture logiciel ainsi qu'un plan de
+            construction détaillé du logiciel et se concentre ainsi les éléments
+            concrets tels que les interfaces, les Framework ou les
             bibliothèques.
           </p>
 
           <p>
             Le résultat de la phase de conception inclut un document de
-            conception avec un plan de construction logicielle, ainsi que des
+            conception avec un plan de construction logiciel, ainsi que des
             plans de test pour les différents éléments.
-          </p>
-
-          <p>
-            L'étape de conception fait intervenir les concepteurs créatifs
-            UI-UX.
           </p>
 
           <p>
@@ -431,7 +419,7 @@
 
           <p>
             L'architecture filaire conçu à la dernière étape est transformée en
-            boutons, onglets, menus, tableaux de bord ; thèmes de couleurs,
+            boutons, onglets, menus, tableaux de bord; thèmes de couleurs,
             typographie et graphiques pour créer une mise en page de base.
           </p>
 
@@ -445,7 +433,7 @@
             en cascade a des racines dans la production de logiciels. Aucun
             codage n'a lieu lors de cette phase, mais les spécifications sont
             établies sur la manière dont le travail doit être réalisé. Il est
-            facile de voir comment cela s'applique à d'autres secteurs.
+            facile de voir comment cela s'applique à d'autres secteurs;
           </p>
 
           <p>
@@ -455,8 +443,12 @@
             constructeur se lance dans la conception de cartes de travail pour
             chaque équipe.
           </p>
+        </article>
 
-          <h2 id="implementation">Implémentation</h2>
+        <article>
+          <header>
+            <h2 class="article-title">Implementation</h2>
+          </header>
 
           <p>
             L'implémentation est le résultat d'un ensemble complexe de processus
@@ -479,8 +471,12 @@
             phase, le projet de logiciel est transposé dans la langue de
             programmation souhaitée.
           </p>
+        </article>
 
-          <h2 id="test">Test</h2>
+        <article>
+          <header>
+            <h2 class="article-title">Test &amp; Validation</h2>
+          </header>
 
           <p>
             À cette étape, les composants individuels et l'ensemble intégré sont
@@ -495,26 +491,25 @@
             Trois types de tests ont généralement lieu : tests unitaires de
             modules de code individuels ; test système du produit intégré ; et
             des tests d'acceptation, formellement menés par ou pour le compte du
-            client.
+            client :
           </p>
 
-          <ul>
-            <li>
-              Tests unitaires de module de code individuels ; est le processus
-              de test des modules individuels d'un programme.
-            </li>
+          <p>
+            <em>Tests unitaires de module de code individuels</em> : est le
+            processus de test des modules individuels d'un programme.
+          </p>
 
-            <li>
-              Tests système du produit intègre ; ici, les modules sont combinés
-              dans un projet d'application et testes comme un package complet.
-            </li>
+          <p>
+            <em>Tests système du produit intègre</em> : ici, les modules sont
+            combinés dans projet d'application et testes comme un package
+            complet.
+          </p>
 
-            <li>
-              Tests d'acceptation ; est un processus d'assurance qualité qui
-              détermine dans quelle mesure un logicielle obtient l'approbation
-              de l'utilisateur final.
-            </li>
-          </ul>
+          <p>
+            <em>Tests d'acceptation</em> : est un processus d'assurance qualité
+            qui détermine dans quelle mesure un logicielle obtient l'approbation
+            de l'utilisateur final.
+          </p>
 
           <p>
             Les défauts, s'ils sont détectés, sont enregistrés et des
@@ -542,22 +537,25 @@
 
             <li>Evaluant le caractère utilisable ou non du système</li>
           </ul>
+        </article>
 
-          <h2 id="mise-en-production">Mise en production</h2>
+        <article>
+          <header class="article-title">
+            <h2 class="article-title">Mise en production ou exploitation</h2>
+          </header>
 
           <p>
             La gestion de projet en cascade fonctionnera mieux lorsqu'un
             résultat concret doit être créé sur une période donnée. Tout doit
             être déjà conçu, planifié et documenté de manière approfondie, pas
-            besoin de réfléchir sur les contraintes car le marbre est bien
-            dressé.
+            besoin de réfléchir sur les contraintes car le marbre est bien dress
           </p>
 
           <p>
             Il s'agit ici de livrer le produit final et de le mettre en service.
             Il est aussi essentiel de prévoir une formation aux utilisateurs
             afin de s'adapter à la solution et d'être autonome le plus
-            rapidement possible à son utilisation.
+            rapidement possible à son utilisation
           </p>
 
           <p>
@@ -570,12 +568,10 @@
             utilisateurs.
           </p>
 
-          <p>Exemple :</p>
-
           <p>
-            Une fois le projet terminé, le test fonctionnel et non fonctionnel
-            complet ok, tout est bon. Maintenant le projet est prêt, Va-t-il
-            être disposé sur le marché directement ? Ou bien dans
+            Example : Une fois le projet terminé, le test fonctionnel et non
+            fonctionnel complet ok, tout est bon. Maintenant le projet est prêt,
+            Va-t-il être disposé sur le marché directement ? Ou bien dans
             l'environnement du client ? Cette étape s'appelle le déploiement ou
             la mise en production. Ok même si le projet est mis à disposition du
             client et sur le marché et que tout marche, si n'importe quel issu
@@ -584,10 +580,23 @@
             mettez à nouveau le projet à disposition. Cette étape s'appelle la
             maintenance ; en termes de créations de logiciel, cette phase
             consiste à créer des correctifs et des mises à jour. Il s'agit de
-            remédier à une liste d'anomalies repérée par le client.
+            remédier à une liste d'anomalies repérée par le cli
           </p>
-        </div>
+
+          <p>
+            <strong>NB</strong> : La gestion des mises en production et la
+            conduite du changement présentent quelques similarités, mais il
+            s'agit de deux concepts très différents : le premier est un
+            processus d'implémentation logicielle, alors que le second est un
+            procédé de coordination de changements dans un projet ou une
+            entreprise grâce à un processus de contrôle du changement.
+          </p>
+        </article>
       </main>
+
+      <footer class="page-footer surface1">
+        <p class="write-by">&copy; 2022 Ousmane Hamadou</p>
+      </footer>
     </div>
   </body>
 </html>
